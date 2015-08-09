@@ -419,7 +419,11 @@ $('#settings a').on('click', function(e){
       }else{
           $(e.target).html("show seconds");      
       }
-  }else{
+  }else if(e.target.id === "remove-settings"){
+	  $('#settings').remove();
+    $('#remove-settings').remove();
+  }
+  else{
       wordClock.init(language[e.target.id]);
   }
   e.preventDefault();
@@ -433,4 +437,7 @@ $('#settings').on("click", ".button", function(e){
   buttons.removeClass("selected");
   target.toggleClass("selected");
   clock.css({backgroundColor:    target.css("backgroundColor")});
+  $("body").css({backgroundColor:    target.css("backgroundColor")});
+  clock.css({color:    target.css("color")});
 });
+ 

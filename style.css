@@ -12,9 +12,8 @@ body{
   position:relative;
   display:block;
   color:#000;
+  background-color:rgb(0,0,139);
   font-size:30px;
-  background: rgb(0,0,139);
-  background: rgb(0,0,139) linear-gradient(-75deg, rgba(0,0,0,0) 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.0) 100%);
   width:550px;
   padding:70px;
   margin:0 auto;
@@ -38,9 +37,9 @@ body{
 }
 
 #settings, #settings a{
-  color:#555;
+  color:gray;
   font-size:13px;
-  width:160px;
+  width:190px;
   margin:0 auto 10px auto; ;
 }
 #settings a:hover{
@@ -51,6 +50,7 @@ body{
   width:100%;
   text-align:center;
 }
+ 
 
 .button{
   position:relative;
@@ -74,7 +74,6 @@ body{
     box-shadow:0 0 3px 0 white inset;
 }
 
-
 .selected:before{
    	content:'✔';
     position:absolute;
@@ -85,28 +84,29 @@ body{
 /* Background colors for the color Setting*/
 #darkblue{
     background-color:rgb(0,0,139);
+	color: black;
 }
 #darkred{
     background-color:rgb(139,0,0);
+		color: black;
 }
 #green{
     background-color:rgb(100,120,0);
+		color: black;
 }
 #purple{
     background-color:rgb(70,40,120);
+		color: black;
 }
 #orange{
     background-color:rgb(150,80,0);
+		color: black;
 }
-
-
-#desc{
-  margin:50px auto;
-  width:420px;
-  height:520px;
-  color:white;
-  font-size:18px;
+#black{
+    background-color:black;
+	color: rgb(70,70,70);
 }
+ 
 
 /* dots in the edge for showing the minutes */
 #e0,#e1,#e2,#e3{ 
