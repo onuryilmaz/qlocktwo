@@ -423,6 +423,10 @@ $('#settings a').on('click', function(e){
 	  $('#settings').remove();
     $('#remove-settings').remove();
   }
+  else if(e.target.id === "zoom"){
+    var zoomCurrent = parseFloat($('#clock').css("zoom"));
+    $('#clock').css({zoom: zoomCurrent + 0.1});
+  }
   else{
       wordClock.init(language[e.target.id]);
   }
